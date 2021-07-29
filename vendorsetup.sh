@@ -66,7 +66,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Some Extra Vars
 	export FOX_USE_XZ_UTILS=1
 	export FOX_USE_GREP_BINARY=1
-	export FOX_USE_UNZIP_BINARY=1
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_TAR_BINARY=1
 	export OF_QUICK_BACKUP_LIST="/super;/boot;/dtbo;/vbmeta;/vbmeta_system;/vbmeta_vendor;/data"
