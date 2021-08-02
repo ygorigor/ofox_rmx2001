@@ -125,6 +125,7 @@ TW_INCLUDE_NTFS_3G := true
 TARGET_USES_MKE2FS := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 # Not sure what's the need of these vars yet
 TW_SCREEN_BLANK_ON_BOOT := true
