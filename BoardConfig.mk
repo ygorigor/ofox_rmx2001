@@ -132,6 +132,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone3/temp
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
+TW_OZIP_DECRYPT_KEY := "1c4c1ea3a12531ae491b21bb31613c11"
 
 # Not sure what's the need of these vars yet
 TW_SCREEN_BLANK_ON_BOOT := true
