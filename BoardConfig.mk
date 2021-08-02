@@ -129,6 +129,7 @@ TARGET_USES_MKE2FS := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone3/temp
 
 # Not sure what's the need of these vars yet
 TW_SCREEN_BLANK_ON_BOOT := true
