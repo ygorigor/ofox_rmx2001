@@ -17,8 +17,6 @@ common_preload      /common_preload     ext4    ro,barrier=1,discard    wait,log
 /dev/block/platform/bootdevice/by-name/protect2     /mnt/vendor/protect_s   ext4    flags=display="Protect_S";backup=1
 /dev/block/platform/bootdevice/by-name/nvdata       /mnt/vendor/nvdata      ext4    flags=display="NVDATA";backup=1;subpartitonof=/nvram
 /dev/block/platform/bootdevice/by-name/nvcfg        /mnt/vendor/nvcfg       ext4    flags=display="NVCFG";backup=1;subpartitonof=/nvram
-/devices/platform/externdevice*                     auto                    auto
-/devices/platform/11200000.usb3_xhci*               auto                    vfat
 /dev/block/platform/bootdevice/by-name/frp          /persistent             emmc
 /dev/block/platform/bootdevice/by-name/nvram        /nvram                  emmc    flags=display="NVRAM";backup=1
 /dev/block/platform/bootdevice/by-name/proinfo      /proinfo                emmc
@@ -53,7 +51,7 @@ common_preload      /common_preload     ext4    ro,barrier=1,discard    wait,log
 /dev/block/platform/bootdevice/by-name/dtbo         /dtbo                   emmc    flags=display="DTBO";backup=1
 /dev/block/platform/bootdevice/by-name/otp          /otp                    emmc
 /dev/block/platform/bootdevice/by-name/odm          /custom                 ext4
-/dev/block/mmcblk1p1                                /external_sd            vfat    flags=storage;wipeingui;removeable;backup=0
+/dev/block/mmcblk0p1                                /sdcard1                vfat    flags=storage;wipeingui;removeable;backup=0
 /dev/block/sdd1                                     /usb_otg                vfat    flags=display="USB-OTG";storage;wipeingui;removeable;backup=0
 /dev/block/platform/bootdevice/by-name/vbmeta       /vbmeta                 emmc    flags=display="Vbmeta";backup=1;flashimg=1
 
