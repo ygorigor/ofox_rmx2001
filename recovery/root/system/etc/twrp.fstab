@@ -12,7 +12,7 @@ common_preload      /common_preload     ext4    ro,barrier=1,discard    wait,log
 # 130 "vendor/mediatek/proprietary/hardware/fstab/mt6779/fstab.in"
 
 /dev/block/by-name/cache                            /cache                  ext4
-/dev/block/platform/bootdevice/by-name/userdata     /data                   ext4    flags=fileencryption=aes-256-xts;formattable;reservedsize=128m
+/dev/block/platform/bootdevice/by-name/userdata     /data                   ext4
 /dev/block/platform/bootdevice/by-name/protect1     /mnt/vendor/protect_f   ext4    flags=display="Protect_F";backup=1
 /dev/block/platform/bootdevice/by-name/protect2     /mnt/vendor/protect_s   ext4    flags=display="Protect_S";backup=1
 /dev/block/platform/bootdevice/by-name/nvdata       /mnt/vendor/nvdata      ext4    flags=display="NVDATA";backup=1;subpartitonof=/nvram
@@ -51,7 +51,7 @@ common_preload      /common_preload     ext4    ro,barrier=1,discard    wait,log
 /dev/block/platform/bootdevice/by-name/dtbo         /dtbo                   emmc    flags=display="DTBO";backup=1
 /dev/block/platform/bootdevice/by-name/otp          /otp                    emmc
 /dev/block/platform/bootdevice/by-name/odm          /custom                 ext4
-/dev/block/mmcblk0p1                                /sdcard1                vfat    flags=storage;wipeingui;removeable;backup=0
+/dev/block/mmcblk0p1                                /sdcard1                vfat    flags=fsflags=utf8;display="Micro-SdCard";storage;wipeingui;removable
 /dev/block/sdd1                                     /usb_otg                vfat    flags=display="USB-OTG";storage;wipeingui;removeable;backup=0
 /dev/block/platform/bootdevice/by-name/vbmeta       /vbmeta                 emmc    flags=display="Vbmeta";backup=1;flashimg=1
 
