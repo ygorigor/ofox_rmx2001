@@ -5,8 +5,8 @@
 # 1 "<command-line>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6779/fstab.in"
 # 119 "vendor/mediatek/proprietary/hardware/fstab/mt6779/fstab.in"
-system                  /system                 ext4    ro      wait,,avb=vbmeta,logical,first_stage_mount,async_discard
-vendor                  /vendor                 ext4    ro      wait,,avb,logical,first_stage_mount,async_discard
+system                  /system                 ext4    ro      wait,avb=vbmeta,logical,first_stage_mount,async_discard
+vendor                  /vendor                 ext4    ro      wait,avb,logical,first_stage_mount,async_discard
 oppo_product            /oppo_product           ext4    ro      wait,logical,first_stage_mount
 oppo_engineering        /oppo_engineering       ext4    ro      wait,logical,first_stage_mount
 common_preload          /common_preload         ext4    ro      wait,logical,first_stage_mount
