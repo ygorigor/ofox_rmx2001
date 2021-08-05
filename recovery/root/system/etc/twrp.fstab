@@ -46,7 +46,7 @@ common_preload      /common_preload     ext4    wait,logical,first_stage_mount
 /spmfw                  emmc    /dev/block/by-name/spmfw
 /audio_dsp              emmc    /dev/block/by-name/audio_dsp
 /boot_para              emmc    /dev/block/by-name/boot_para
-/dtbo                   emmc    /dev/block/by-name/dtbo                         flags=display="Dtbo";backup=1;
+/dtbo                   emmc    /dev/block/by-name/dtbo                         flags=display="Dtbo";backup=1;flashimg=1;
 /otp                    emmc    /dev/block/by-name/otp
 /custom                 ext4    /dev/block/by-name/odm                          flags=display="Odm";
 /sdcard1                vfat    /dev/block/mmcblk0p1                            flags=fsflags=utf8;display="Micro SdCard";storage;wipeingui;removable;
