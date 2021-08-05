@@ -60,8 +60,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_FL_PATH2=""
 	export OF_FLASHLIGHT_ENABLE=1
 	export OF_MAINTAINER="Yillié"
-	export OF_TARGET_DEVICES="RMX2001, RMX2002, RMX2151, wasabi"
-	export TARGET_DEVICE_ALT="RMX2001, RMX2002, RMX2151, wasabi"
+	export OF_TARGET_DEVICES="RMX2001, RMX2002, RMX2003, RMX2151, wasabi"
+	export TARGET_DEVICE_ALT="RMX2001, RMX2151, wasabi"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 
