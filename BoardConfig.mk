@@ -101,6 +101,11 @@ BOARD_OPPO_DYNAMIC_PARTITIONS_PARTITION_LIST := \
         oppo_product \
         common_preload
 
+TW_UNIQUE_LOGICAL_PARTITIONS_PARTITION_LIST := \
+	oppo_engineering \
+        oppo_product \
+        common_preload
+
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
 
