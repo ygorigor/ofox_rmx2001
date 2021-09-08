@@ -96,15 +96,7 @@ BOARD_SUPER_PARTITION_GROUPS := oppo_dynamic_partitions
 BOARD_OPPO_DYNAMIC_PARTITIONS_SIZE := 6970933248
 BOARD_OPPO_DYNAMIC_PARTITIONS_PARTITION_LIST := \
         system \
-        vendor \
-        oppo_engineering \
-        oppo_product \
-        common_preload
-
-TW_UNIQUE_LOGICAL_PARTITIONS_PARTITION_LIST := \
-	oppo_engineering \
-        oppo_product \
-        common_preload
+        vendor
 
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
