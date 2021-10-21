@@ -131,6 +131,10 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_OZIP_DECRYPT_KEY := "1c4c1ea3a12531ae491b21bb31613c11"
 
+# Exclude twrpApex.cpp from recovery
+# This a temp fix for the recovery splash issue on A12
+TW_EXCLUDE_APEX := true
+
 # Not sure what's the need of these vars yet
 TW_SCREEN_BLANK_ON_BOOT := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
