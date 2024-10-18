@@ -1,6 +1,6 @@
 #
 #	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2020-2021 The OrangeFox Recovery Project
+# 	Copyright (C) 2020-2024 The OrangeFox Recovery Project
 #
 #	OrangeFox is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -18,11 +18,8 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-ifneq ($(filter RMX2001,$(TARGET_DEVICE)),)
-
 LOCAL_PATH := $(call my-dir)
 
-subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
-$(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
-
+ifeq ($(TARGET_DEVICE),RMX2001)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
