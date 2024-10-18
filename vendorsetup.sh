@@ -60,6 +60,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_MAINTAINER="ygorigor"
 
     export FOX_DRASTIC_SIZE_REDUCTION=1
+    export OF_USE_LZMA_COMPRESSION=1
 
 else
     if [ -z "$FOX_BUILD_DEVICE" -a -z "$BASH_SOURCE" ]; then
