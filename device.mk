@@ -21,7 +21,7 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-LOCAL_PATH := device/realme/rmx2001
+LOCAL_PATH := device/realme/RMX2001
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -34,7 +34,6 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
-#TW_USE_FSCRYPT_POLICY := 1
 BOARD_USES_METADATA_PARTITION := true
 
 # platform

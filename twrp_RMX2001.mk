@@ -23,12 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+DEVICE_PATH := device/realme/RMX2001
 
 # Inherit our device configuration
-$(call inherit-product, device/realme/rmx2001/device.mk)
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
+
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_rmx2001.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_RELEASE_NAME := RMX2001
