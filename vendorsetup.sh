@@ -46,21 +46,20 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_USE_TAR_BINARY=1
     export FOX_USE_SED_BINARY=1
     export FOX_USE_XZ_UTILS=1
-    export FOX_USE_LZ4_BINARY=1
-    export FOX_USE_ZSTD_BINARY=1
     export FOX_DELETE_AROMAFM=1
     export TARGET_DEVICE_ALT="RMX2001, RMX2151, wasabi"
     export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
     export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
     export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
     export FOX_VANILLA_BUILD=1
-    export OF_PATCH_AVB20=1
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
     export OF_DEFAULT_TIMEZONE="WET-2;WET"
 
     # R11.1 Settings
     export FOX_VERSION="R11.1_1"
     export OF_MAINTAINER="ygorigor"
+
+    export FOX_DRASTIC_SIZE_REDUCTION=1
 
 else
     if [ -z "$FOX_BUILD_DEVICE" -a -z "$BASH_SOURCE" ]; then
