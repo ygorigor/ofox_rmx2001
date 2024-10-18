@@ -126,6 +126,8 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
+TW_Y_OFFSET := 80
+TW_H_OFFSET := -80
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
