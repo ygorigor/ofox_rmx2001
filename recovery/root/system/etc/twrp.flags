@@ -7,6 +7,7 @@
 /data                   ext4    /dev/block/by-name/userdata
 /protect_f              ext4    /dev/block/by-name/protect1                     flags=display="Protect_F";backup=1;
 /protect_s              ext4    /dev/block/by-name/protect2                     flags=display="Protect_S";backup=1;
+/metadata               ext4    /dev/block/by-name/metadata                     flags=backup=1;display="Metadata"
 /persist                ext4    /dev/block/by-name/persist                      flags=display="Persist";backup=1;
 /nvram                  emmc    /dev/block/by-name/nvram                        flags=display="NvRam";backup=1;
 /nvdata                 ext4    /dev/block/by-name/nvdata                       flags=display="NvData";backup=1;subpartitionof=/nvram;
