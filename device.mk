@@ -46,6 +46,9 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# framerate
+TW_FRAMERATE := 90
+
 # Fastbootd
 PRODUCT_PACKAGES += \
         android.hardware.fastboot@1.0-impl-mock \
