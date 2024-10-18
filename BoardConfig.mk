@@ -148,3 +148,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
+
+# support "fastboot update <zip-file>"
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
