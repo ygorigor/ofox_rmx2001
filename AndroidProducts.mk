@@ -18,9 +18,9 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_RMX2001.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_RMX2001.mk
 
 COMMON_LUNCH_CHOICES := \
-                omni_RMX2001-eng \
-                omni_RMX2001-user \
-                omni_RMX2001-userdebug
+                twrp_RMX2001-eng \
+                twrp_RMX2001-user \
+                twrp_RMX2001-userdebug
