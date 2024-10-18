@@ -117,7 +117,6 @@ BOARD_USES_METADATA_PARTITION := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # TWRP specific build flags
-TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
 TW_THEME := portrait_hdpi
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
@@ -161,3 +160,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)

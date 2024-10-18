@@ -18,6 +18,10 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
