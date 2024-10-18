@@ -21,10 +21,12 @@
 # OrangeFox-specific settings #
 
 # screen
-OF_SCREEN_H := 2340
-OF_STATUS_H := 80
-OF_STATUS_INDENT_LEFT := 64
+OF_SCREEN_H := 2400
+OF_STATUS_H := 100
+OF_STATUS_INDENT_LEFT := 72
 OF_STATUS_INDENT_RIGHT := 48
+OF_HIDE_NOTCH := 1
+OF_CLOCK_POS := 1
 
 # other stuff
 OF_DONT_PATCH_ENCRYPTED_DEVICE := 1
@@ -36,7 +38,7 @@ OF_USE_GREEN_LED := 0
 OF_PATCH_AVB20 := 1
 
 # quick backup defaults
-OF_QUICK_BACKUP_LIST := /boot;/data;/system_image;/vendor_image;
+OF_QUICK_BACKUP_LIST := /boot;/data;
 
 # whether to permit free access to internal storage
 OF_RUN_POST_FORMAT_PROCESS := 1
@@ -54,4 +56,18 @@ OF_USE_LEGACY_BATTERY_SERVICES := 1
 
 # number of list options before scrollbar creation
 OF_OPTIONS_LIST_NUM := 9
+
+# maximum permissible splash image size (in kilobytes); do *NOT* increase!
+OF_SPLASH_MAX_SIZE := 130
+
+# OTA
+OF_KEEP_DM_VERITY := 1
+OF_SUPPORT_ALL_BLOCK_OTA_UPDATES := 1
+OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR := 1
+
+OF_ENABLE_LPTOOLS := 1
+OF_DEVICE_WITHOUT_PERSIST := 1
+OF_FORCE_DATA_FORMAT_F2FS := 1
+OF_UNMOUNT_SDCARDS_BEFORE_REBOOT := 1
+FOX_USE_DATA_RECOVERY_FOR_SETTINGS := 1
 #

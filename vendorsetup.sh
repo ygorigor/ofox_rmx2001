@@ -56,6 +56,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_VANILLA_BUILD=1
     export OF_PATCH_AVB20=1
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
+    export OF_DEFAULT_TIMEZONE="WET-2;WET"
 
     # R11.1 Settings
     export FOX_VERSION="R11.1_1"
