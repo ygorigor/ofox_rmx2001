@@ -53,5 +53,5 @@
 /opporeserve            ext4    /dev/block/by-name/opporeserve2                 flags=display="Oppo Reserve";
 
 /sdcard1                vfat    /dev/block/mmcblk0p1  /dev/block/mmcblk0        flags=fsflags=utf8;display="Micro SdCard";storage;wipeingui;removable;
-/usb_otg                vfat    /dev/block/sdd1 /dev/block/sdd                  flags=fsflags=utf8;display="Usb Otg";storage;wipeingui;removable;
+/usb_otg                auto    /dev/block/sdd1 /dev/block/sdd                  flags=fsflags=utf8;display="Usb Otg";storage;wipeingui;removable;
 /storage                ext4    /data/media/0                                   flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable;
