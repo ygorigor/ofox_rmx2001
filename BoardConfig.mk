@@ -117,6 +117,7 @@ BOARD_USES_METADATA_PARTITION := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # TWRP specific build flags
+TW_DEVICE_VERSION := 4
 TW_THEME := portrait_hdpi
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
