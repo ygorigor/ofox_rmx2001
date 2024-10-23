@@ -49,9 +49,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export TARGET_DEVICE_ALT="RMX2001, RMX2151, wasabi"
     export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
     export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
-    export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
     export OF_DEFAULT_TIMEZONE="WET-2;WET"
+    export OF_TWRP_COMPATIBILITY_MODE := 1
 
     # R11.1 Settings
     export FOX_VERSION="R11.1_1"
