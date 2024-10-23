@@ -54,7 +54,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
     export OF_DEFAULT_TIMEZONE="WET-2;WET"
-    export OF_TWRP_COMPATIBILITY_MODE := 1
+    export OF_TWRP_COMPATIBILITY_MODE=1
 
     # R11.1 Settings
     export FOX_VERSION="R11.1_1"
