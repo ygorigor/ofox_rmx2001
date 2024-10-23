@@ -55,13 +55,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
     export OF_DEFAULT_TIMEZONE="WET-2;WET"
     export OF_TWRP_COMPATIBILITY_MODE=1
+    export OF_USE_LZMA_COMPRESSION=1
 
     # R11.1 Settings
     export FOX_VERSION="R12.1_1"
     export OF_MAINTAINER="ygorigor"
-
-    export FOX_DRASTIC_SIZE_REDUCTION=1
-    export OF_USE_LZMA_COMPRESSION=1
 
 else
     if [ -z "$FOX_BUILD_DEVICE" -a -z "$BASH_SOURCE" ]; then
